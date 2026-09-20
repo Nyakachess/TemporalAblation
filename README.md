@@ -4,6 +4,8 @@ Web-based temporal feature ablation and redundancy-evaluation platform for the
 CIS4517 MSc dissertation (Beryl Odingo, 26673207). Implemented in Python with
 Streamlit, pandas and Altair.
 
+**Live site:** https://ablation-platform.onrender.com
+
 ## What it does
 
 - Presents the canonical FINAL results of the block-wise study (Blocks A, B1, B2)
@@ -69,11 +71,18 @@ pipeline outputs instead, copy these files from Google Drive into `./data/`:
     FINAL_multiseed_gain_summary.csv
     FINAL_threeblock_shap_blocks.csv
 
-## Deploy free (for the dissertation link)
+## Deployed site
 
-1. Push this folder to a public GitHub repository.
-2. At https://share.streamlit.io choose "Create app", select the repo and
-   `app.py`, and deploy. The public URL goes in the dissertation appendix.
+The platform is deployed on Render and is publicly available at:
+
+    https://ablation-platform.onrender.com
+
+This is the URL cited in the dissertation appendix. Render free-tier services
+sleep after inactivity, so the first load may take up to a minute to wake.
+
+To redeploy or host your own copy, push this folder to a public GitHub
+repository and create a Web Service on https://render.com pointing at it
+(alternatively, https://share.streamlit.io can host `app.py` directly).
 
 ## Evidence for Chapter 4
 
