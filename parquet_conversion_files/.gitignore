@@ -1,0 +1,11 @@
+# data and archives — never commit
+*.zip
+*.json
+*.parquet
+*.csv
+converted/
+converted_en/
+ber_files/
+*.swp
+/swapfile
+__pycache__/
