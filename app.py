@@ -753,7 +753,11 @@ with tab_apply:
             required = {"checkpoint", "model", "roc_auc", "pr_auc"}
             missing = required - set(user_df.columns)
             if missing:
-                st.error(f"Missing columns: {', '.join(sorted(missing))}")
+                st.error(
+                    "Your CSV cannot be analysed yet. It is missing these required columns: "
+                    f"{', '.join(sorted(missing))}. Download the example CSV above, replace its example "
+                    "values with your results, and upload it again."
+                )
             elif "A" not in set(user_df["model"]):
                 st.error("No baseline rows found: include one row with model = A per checkpoint.")
             else:
